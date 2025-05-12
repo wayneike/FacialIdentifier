@@ -7,6 +7,8 @@ import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
 
+torch.classes.__path__ = []
+
 # Load the model
 class ImprovedCNNModel(torch.nn.Module): # Replace with your actual model architecture
     def __init__(self, num_classes=40):
